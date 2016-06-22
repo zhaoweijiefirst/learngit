@@ -1,17 +1,24 @@
 mkdir  learngit  --创建文件夹
 cd learngit      --进入文件夹
 git init         --将该目录变成git可以管理的仓库
+
 把文件放入到目录中需要两步：
 git add readme.txt
 git commit -m "修改信息"
 
 git status 查看仓库的状态
-git diff readme.txt 查看具体修改了什么内容
+
 git log 
 git log --pretty=oneline
-git reset --hard HEAD^  退回到上一个版本
+
 git的思想：工作区；缓存区和版本库
+
+git diff readme.txt          查看工作区和缓存区的区别
 git diff HEAD -- readme.txt  查看工作区和版本库的区别
+
+git reset --hard HEAD^  退回到上一个版本
 git checkout  --  readme.txt  丢掉工作区的修改
+git reset HEAD readme.txt     丢掉缓存区的修改
+
 
 
